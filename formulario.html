@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me adicione</title>
+    <style>
+        
+      
+        @import url('https://fonts.googleapis.com/css2? family= Righteous & family= Roboto+Condensed &família = Sarala & display=swap');
+        body{
+            background: linear-gradient(68.15deg, #a03371 16.62%, #37c4c4 85.61%);
+            font-family:'Righteous'; 
+        }
+        .box{
+            font-family:"Sarala" ;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: rgba(3, 5, 0, 0.2);
+            padding:  10px;
+            border-radius: 10px;
+            width: 25%;
+          
+        }
+        fieldset{
+            border:3px double rgb(234, 180, 210);
+            border-radius: 10px;
+            height:500px ;
+        }
+       
+        legend{
+           text-align: center;
+        }
+        .inputBox{
+            position: relative;
+           
+        
+        }
+        .inputUser{
+            background: none;
+            color: aliceblue;
+            font-size: 15px;
+            width: 100%;
+            letter-spacing: 1px;
+            border: none;
+            border-bottom: 1px solid #fff;
+            outline: none;
+        }
+        .labelInput{
+            position: absolute;
+            top:0px;
+            left:0px;
+            pointer-events: none;
+            transition: 1s;
+            border: none;
+
+        }
+        .inputUser:focus~.labelInput,
+        .inputUser:valid~.labelInput
+        {
+          top: -20px;
+          font-size: 12px;
+        }
+        #dataNascimento{
+            background: #fff;
+            border-radius: 5px;
+            font-size: 15px;
+            border: none;
+            color: palevioletred;
+            font-weight: 700;
+        }
+        #submit{
+            background: linear-gradient(90deg, rgba(72, 235, 250, 0.5), rgba(255, 87, 235, 0.5));
+            line-height: 30px;
+            width: 100%;
+            border-radius: 10px;
+            
+        }
+        a{
+            text-decoration: none;
+            color: #fff;
+            padding: 5px;
+            margin: 3px;
+        }
+        a:hover{
+            background: linear-gradient(90deg, rgba(72, 235, 250, 0.5), rgba(255, 87, 235, 0.5));
+            line-height: 30px;
+        }
+  
+         
+   </style>
+</head>
+<body>  
+     <a href="index.html">Home</a>
+    <div class="box">
+  
+     
+        <form id="adicionar">
+            <fieldset>
+                <legend><img src="imagens/logo.png" alt="Imagem logo Ballerini"width="100"></legend>
+            
+            <div class="inputBox">
+                <input type="text" id="name" class="inputUser" required>
+                <label for="name"class="labelInput">Nome completo</label>
+             </div>
+             <br><br>
+              
+            <div class="inputBox">
+                <input type="email" id="email" class="inputUser" required>
+                <label for="email"class="labelInput">E-mail</label>
+             </div>
+             <br><br>
+
+             <div class="inputBox">
+                <input type="tel" id="tel"class="inputUser" required>
+                <label for="tel"class="labelInput">Telefone</label>
+             </div>
+
+             <div class="inputBox">
+             <p>Sexo:</p>
+                <input type="radio" name="genero" value="Feminino"id="feminino">
+                <label for="feminino">Feminino</label>
+        
+                <input type="radio" name="genero" value="Masculino"id="masculino">
+                <label for="masculino">Masculino</label>
+            </div>
+            <br><br>
+            
+            <div >
+                <label for="dataNascimento">Data de Nascimento</label>
+                <input type="date" name="dataNascimento" id="dataNascimento" required>
+            </div>
+            <br><br>
+            <div class="inputBox">
+                <input type="text" id="cidade" class="inputUser" required>
+                <label for="cidade"class="labelInput">Cidade</label>
+             </div>
+            
+            
+            <br><br>
+            
+                <input type="submit" value="Enviar" id="submit">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

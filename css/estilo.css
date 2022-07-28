@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2? family= Righteous & family= Roboto+Condensed &família = Sarala & display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background: linear-gradient(68.15deg, #a03371 16.62%, #37c4c4 85.61%);
+    
+}
+header{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    border-bottom: 0.1px solid #FFF2E7;
+}
+header #logo{
+    padding: 6px;
+    
+}
+#logo img{
+    Width:60px;
+    Height:60px;
+}
+header .menu{
+    display: flex;
+    gap: 15px; 
+}
+
+header .menu a{
+    color:#FFF2E7;
+}
+header .menu a:hover{
+    background-color: #2faeae;
+}
+#principal h1{
+    width: 308px;
+    height: 80px;
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 79px;
+    color: #FFF2E7;
+    padding-top: 10px;
+    
+}
+section#titulo{
+    display: flex;
+    justify-content:space-around;
+    padding-left: 90px;
+}
+#principal{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+#principal p{
+    color:#FFF2E7 ;
+}
+
+.botao button{
+    border:none;
+    background: #ECD6C4;
+    padding: 10px;
+    border-radius: 20px;
+}
+button:hover{
+    background-color:#dcb99d ;
+    transition: 0.5s;
+    font-weight: 800,bold;
+
+}
+section #paragrafo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+section #paragrafo h3{
+    padding-bottom: 10px;
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: #ECD6C4;
+}
+section #paragrafo p{
+    font-family: 'Sarala';
+    font-style: normal;
+    font-weight: 400;
+    color: #ECD6C4;
+    font:
+}
+footer{
+  text-align: center;
+    padding:20px ;
+    border-top: 0.1px solid #FFF2E7;
+}
